@@ -15,10 +15,9 @@ export class ProductCardComponent {
   constructor(private _commonsLibService: CommonsLibService) {}
 
   clickCard(): void {
-
-    // this._commonsLibService.sendData({
-    //   name: this.product!.name,
-    //   price: this.product!.price,
-    // });
+    this._commonsLibService.sendData({
+      name: this.product.name,
+      price: this.product.price,
+    });
   }
 }
