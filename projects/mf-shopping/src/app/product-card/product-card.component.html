@@ -1,9 +1,9 @@
-<div class="card">
+<div class="card" *ngIf="product">
   <div class="card-image">
-    <img [src]="product.urlImage" [alt]="product.name"/>
+    <img [src]="product.urlImage" [alt]="product.description"/>
   </div>
 
-  <p class="card__price">{{ product.price}}</p>
+  <p class="card__price">{{ product.price | currency }}</p>
 
   <div class="card-description">
     <label class="card-description__title">{{ product.name }} </label>

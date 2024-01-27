@@ -1,15 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ICommonProduct } from '@commons-lib';
 
 @Component({
   selector: 'app-payment',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.scss'
 })
 export class PaymentComponent {
-  constructor() {}
 
   products: ICommonProduct[] = [];
 

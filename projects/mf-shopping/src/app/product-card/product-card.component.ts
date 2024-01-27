@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { IProductCard } from '../interfaces/product-card.interface';
 import { CommonsLibService } from '@commons-lib';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.scss'
 })
